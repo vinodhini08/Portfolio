@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinodhini P - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .profile-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .profile-info p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item h3, .experience-item h3, .project-item h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #3498db;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .project-item {
+            border-left: 3px solid #3498db;
+            padding-left: 20px;
+        }
+
+        .certifications-list {
+            list-style-type: none;
+        }
+
+        .certifications-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .certifications-list li::before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 0;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-info">
+                <h1>Vinodhini P</h1>
+                <p>Information Technology Professional</p>
+                <div class="contact-info">
+                    <a href="mailto:vinodhiniparamasivam@gmail.com">vinodhiniparamasivam@gmail.com</a> |
+                    <a href="tel:6381735365">6381735365</a> |
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+                    <a href="https://leetcode.com/yourprofile" target="_blank">LeetCode</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>B.Tech Information Technology</h3>
+                <p>Easwari Engineering College, Chennai</p>
+                <p>CGPA: 8.3 | 2021 - 2025</p>
+            </div>
+            <div class="education-item">
+                <h3>Higher Secondary Education</h3>
+                <p>Kamaraj Matriculation Higher Secondary School, Chidambaram</p>
+                <p>Percentage: 91.4% | 2020 - 2021</p>
+            </div>
+            <div class="education-item">
+                <h3>Secondary Education</h3>
+                <p>Kamaraj Matriculation Higher Secondary School, Chidambaram</p>
+                <p>Percentage: 90.6% | 2018 - 2019</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>IoT (Embedded System) Intern</h3>
+                <p>Prologic Automation Systems, Chennai | Dec 2023 - Jan 2024</p>
+                <p>• Developed human sensor project using embedded systems</p>
+                <p>• Integrated PIR and ultrasonic sensors for human presence detection</p>
+                <p>• Implemented Wi-Fi and BLE communication protocols</p>
+                <p>• Created signal-processing algorithms for data analysis</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">React JS</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Embedded Systems</span>
+                <span class="skill-tag">IoT</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Doctor Appointment Booking System</h3>
+                <p>Technologies: React JS, Node.js, MongoDB</p>
+                <p>• Developed a full-stack application for doctor appointment management</p>
+                <p>• Implemented search functionality by specialty and availability</p>
+                <p>• Created separate dashboards for admins and doctors</p>
+            </div>
+            <div class="project-item">
+                <h3>Hotel Management System</h3>
+                <p>Technology: C programming</p>
+                <p>• Built a secure hotel management application with CRUD operations</p>
+                <p>• Implemented role-based access control</p>
+                <p>• Enhanced operational efficiency through streamlined data management</p>
+            </div>
+            <div class="project-item">
+                <h3>Plant Health Monitoring System</h3>
+                <p>Technology: Python, EfficientNetV2</p>
+                <p>• Created AI-driven plant disease detection system</p>
+                <p>• Integrated chatbot for real-time diagnosis</p>
+                <p>• Provided sustainable farming recommendations</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Certifications</h2>
+            <ul class="certifications-list">
+                <li>Data Analytics With Python - NPTEL</li>
+                <li>Privacy and Security through Online Social Media - NPTEL</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
